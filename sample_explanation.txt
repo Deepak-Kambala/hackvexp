@@ -1,0 +1,42 @@
+This code is written in Python and it calculates the factorial of a given number. Here's a detailed explanation of its purpose, main functions, and key components:
+
+### Purpose
+The purpose of this code is to calculate the factorial of a user-specified number using recursion.
+
+### Main Functions
+
+* `factorial(n)`: This function takes an integer `n` as input and returns the factorial of that number.
+* `main()`: This is the entry point of the program, where the calculations are performed.
+
+### Key Components
+
+#### If Statement
+The code uses a conditional if statement to handle two cases:
+- `if n == 0:` - When `n` is zero, it returns 1 immediately, as the factorial of 0 is defined as 1.
+- `else:` - For all other values of `n`, it calls itself recursively with the argument `n-1`.
+
+#### Recursive Call
+The recursive call to `factorial(n)` is made inside the `if` statement. This function is called repeatedly until it reaches a base case, which is when `n` becomes 0.
+
+### Code Breakdown
+
+Here's how the code executes:
+
+1. The program starts by calling the `main()` function.
+2. It takes an integer value of `5` from the user and assigns it to the variable `num`.
+3. Inside the `factorial()` function, it checks if `n` is 0. If true, it returns 1 immediately (base case).
+4. If `n` is not 0, it calls itself recursively with the argument `n-1`, effectively calculating the factorial of `n-1`.
+5. This recursive call repeats until it reaches a base case or the desired input value.
+6. Once the recursion completes, the function returns the calculated factorial value.
+
+### Example Use Case
+When run, this program will prompt the user to enter a number. Let's say the user enters `5`. The program will then calculate and print the factorial of 5, which is `120`.
+
+### Best Practices
+
+This code demonstrates good programming practices such as:
+
+- Clear function names (`factorial()` and `main()`)
+- Well-defined base case for recursion
+- Repetitive calls to a recursive function until it reaches a desired input value
+
